@@ -9,6 +9,8 @@ def multiply(a, b):
 """
 
 def multiply(a, b):
+    # The problem above didn't include 'return' so any equation
+    # will not be carried out
     return a * b
 
 print(multiply(2, 5))   # Expected outcome: 10
