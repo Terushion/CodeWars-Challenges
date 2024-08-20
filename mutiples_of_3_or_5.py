@@ -30,19 +30,16 @@ def solution(num):
         # to the integer that was an input in the function
         if x % 3 == 0:
             sum_of += x
+        # Check if the number is a multiple of 5, but not already added
         elif x % 5 == 0:
             sum_of += x   
-        # If an integer that is divided by 3 or 5 does not have a remainder
-        # Then it is a multiple, so it will be added to the sum
-        # If 'x' is a mulutiple of 3 and 5, it will only be added to the sum once
-        # The reason being is because if it meets the first condition,
-        # if x % 3 == 0, it will be added to the sum automatically.
         else:
+            # If an integer that is divided by 3 or 5 DOES have a remainder
+            # Then it is not a multiple, and therefore the loop will pass onto the next            # 
             pass
 
     return sum_of
 
-
-print(solution(16))
+print(solution(16)) # Expected output: 60
 
 
