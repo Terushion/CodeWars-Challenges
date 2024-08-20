@@ -18,12 +18,15 @@ output = 78
 
 def solution(num):
 
+    sum_of = 0
+    
     # num = int(input("Enter a number to find the sum of all multiples of 3 & 5 below it:\n"))
 
     # if num != int():
     #     print("Error! That isn't correct! Please enter an integer next time.")
 
-    sum_of = 0
+    if num < 0:
+        return 0
 
     for x in range(1, num):
         # This will iterate over every number from one 
@@ -41,5 +44,6 @@ def solution(num):
     return sum_of
 
 print(solution(16)) # Expected output: 60
+print(solution(-1)) # Expected output: 0
 
 
